@@ -1,0 +1,184 @@
+.fondo{
+    width: 100%;
+    background-image: url(/Img/Fondo/Fondo_02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.logo{
+    margin-top: -10px;
+    width:140px;
+    height:50px;
+}
+
+/* CSS INDEX */
+.container{
+    margin-top: 50px;
+}
+.carousel-inner{
+    border-radius: 20px;
+    box-shadow:  3px 3px 3px  black;
+}
+
+.sombra{
+    text-shadow: 3px 3px 2px black;
+}
+
+h5 p{
+    text-shadow: 3px 3px 5px black;
+}
+.titulo{
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+.titulo h1{
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.boton{
+    margin-top: 20px;
+    text-align: center;
+}
+.boton button{
+    box-shadow: 1px 1px 2px  black;
+}
+.redes{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.img_redes{
+   justify-content: center;
+   display: flex;
+   margin-top: 30px;
+}
+.img_redes img{
+    width: 80px;
+    height: 80px;
+}
+/* TERMINO CSS INDEX */
+
+/* CSS GALERIA */
+.titulo_galeria{
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+.parrafo{
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.mascota{
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+}
+.card-header{
+    color: black;
+}
+.card-body{
+    color: black;
+}
+.mascota img{
+    padding:5px;
+}
+.card{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.boton h3{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+/* TERMINO CSS GALERIA
+
+/*CSS FORMULARIO*/
+.titulo_formulario{
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+.container_formulario{
+justify-content: center;
+display: flex;
+}
+.formulario{
+    width: 900px;
+    height:500px;
+    background-color:  #f4d03f ;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  3px 3px 3px  black;
+}
+.formulario form{
+    margin-top: 50px;
+}
+.btn_aceptar{
+    margin-top:30px;
+}
+.btn_aceptar button{
+    box-shadow: 1px 1px 2px  black;
+}
+.subtitulo{
+    margin-top: 20px;
+}
+/* TERMINO CSS FORMULARIO */
+
+/*CSS QUIENES SOMOS */
+.perro{
+    position: absolute;
+}
+.perro img{
+    height:200px;
+    width: 230px;
+    margin-left: 300px;
+    margin-top: 70px;
+    transform:rotate(-10deg);
+}
+.jumb{
+    justify-content: center;
+    display: flex;
+    margin-top: 150px;
+}
+.jumbotron{
+    text-align: center;
+    width: 1200px;
+    height: 600%;
+    box-shadow:  3px 3px 3px  black;
+}
+/* TERMINO CSS QUIENES SOMOS */
+
+/* CSS CONTACTO */
+.container_contacto{
+    justify-content: center;
+    display: flex;
+    }
+    .contacto{
+        width: 500px;
+        height:600px;
+        background-color:  #f4d03f ;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow:  3px 3px 3px  black;
+    }
+    .contacto form{
+        margin-top: 40px;
+    }
+    .btn_enviar{
+        margin-top: 40px;
+        text-align: center;
+    }
+/* TERMINO CSS CONTACTO */

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!--Link Estilos Css-->
+    <link rel="stylesheet" href="estilos.css">
+    <!--Link Estilos Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="fondo">
+    <header>
+        <!--Navegador Bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f1c40f ;">
+            <a class="navbar-brand" href="#"></a>
+            <img src="/Logo/Logo_Adopta01.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class=" nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes_somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Navegador Bootstrap Termino-->
+
+        <!--Titulo-->
+        <div class="titulo_formulario">
+            <h1>Ingresa tus Datos</h1>
+            <h5>Gracias por preferir adoptar</h5>
+        </div>
+        <!--Titulo Termino-->
+
+        <!--Formulario Ingreso Adopacion-->
+        <div class="container_formulario">
+            <div class="formulario">
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault01">Nombre Completo</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault02">Rut</label>
+                            <input type="text" class="form-control" id="rut" required oninput="checkRut(this)">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault03">Telefono</label>
+                            <input type="number" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault01">Fecha Nacimiento</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleDropdownFormEmail1">Correo Electronico</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                </div>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                    aria-describedby="inputGroupPrepend2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault04">Tipo de Vivienda</label>
+                            <select id="validationDefault04" class="custom-select" required>
+                                <option selected></option>
+                                <option value="1">Casa con patio grande</option>
+                                <option value="2">Casa con patio pequeño</option>
+                                <option value="3">Casa sin patio</option>
+                                <option value="4">Departamento</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault03">Regiones</label>
+                            <select class="custom-select" id="regiones"></select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault05">comunas</label>
+                            <select class="custom-select" id="comunas"></select>
+                        </div>
+                    </div>
+                    <div class="subtitulo">
+                        <h6>Una vez recibido tus datos , nos comunicaremos contigo, Gracias </h6>
+                    </div>
+                    <div class="btn_aceptar">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Acepta los términos y condiciones
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-info" type="submit">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Formulario Ingreso Adopacion Termino-->
+
+        <!--Titulo Redes Sociales-->
+        <div class="redes">
+            <h2>¡Siguenos!</h2>
+        </div>
+        <!--Titulo Redes Sociales Termino-->
+
+        <!--Imagenes Redes Sociales-->
+        <div class="img_redes">
+            <div>
+                <a href="https://www.instagram.com/" target="_blank"><img src="/Img/Redes/Instagram.png"></a>
+            </div>
+            <div>
+                <a href="https://web.facebook.com/" target="_blank"><img src="/Img/Redes/Facebook.png"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/" target="_blank"><img src="/Img/Redes/Twitter.png"></a>
+            </div>
+        </div>
+        <!--Imagenes Redes Sociales Termino-->
+    </header>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="regiones_comunas.js"></script>
+<script src="validar_rut.js"></script>
+
+</html>
